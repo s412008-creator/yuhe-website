@@ -90,6 +90,31 @@
         nav.classList.toggle('active');
       });
     }
+
+    // Scroll Animations
+    document.addEventListener("DOMContentLoaded", () => {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+          }
+        });
+      }, { threshold: 0.1 });
+
+      document.querySelectorAll('.reveal').forEach(el => {
+        observer.observe(el);
+      });
+      
+      // Trigger animations for elements already in viewport on load
+      setTimeout(() => {
+        document.querySelectorAll('.reveal').forEach(el => {
+          const rect = el.getBoundingClientRect();
+          if(rect.top < window.innerHeight) {
+            el.classList.add('active');
+          }
+        });
+      }, 100);
+    });
   </script>
 </body>
 </html>

@@ -31,16 +31,74 @@
       <section class="hero">
         <div class="container grid-2" style="align-items: center; gap: 60px;">
           <div class="hero-content" style="max-width: 100%;">
-            <span class="hero-tag">SIKA 台灣總代理</span>
-            <h1 class="hero-title" style="font-size: 48px;">您專業建築工程的<br>頂尖合作夥伴</h1>
-            <p class="hero-desc" style="font-size: 16px; margin-bottom: 40px;">在速成主義盛行的時代，我們以精準為犁，深耕每寸工地。<br>提供高品質、低揮發的綠建築建材，讓每一次選擇都成為時間帶不走的建築詩篇。</p>
-            <div class="hero-actions">
+            <span class="hero-tag reveal">SIKA 台灣總代理</span>
+            <h1 class="hero-title reveal delay-1" style="font-size: 48px;">您專業建築工程的<br>頂尖合作夥伴</h1>
+            <p class="hero-desc reveal delay-2" style="font-size: 16px; margin-bottom: 40px;">在速成主義盛行的時代，我們以精準為犁，深耕每寸工地。<br>提供高品質、低揮發的綠建築建材，讓每一次選擇都成為時間帶不走的建築詩篇。</p>
+            <div class="hero-actions reveal delay-3">
               <a href="products.html" class="btn btn-primary">瀏覽產品目錄</a>
               <a href="contact.html" class="btn btn-outline">與我們聯繫</a>
             </div>
           </div>
-          <div class="hero-image">
+          <div class="hero-image reveal delay-4">
             <img src="hero.png" alt="High-end modern architecture" style="width: 100%; height: auto; display: block; border: 1px solid var(--color-border); box-shadow: 0 20px 60px rgba(15,23,42,0.1);">
+          </div>
+        </div>
+      </section>
+
+      <!-- Scrollable Content 1: Brand Introduction -->
+      <section class="section" style="background-color: var(--color-bg);">
+        <div class="container grid-2" style="align-items: center;">
+          <div class="reveal">
+            <span class="section-subtitle">Our Philosophy</span>
+            <h2 class="section-title">建築的核心<br>在於看不見的細節</h2>
+            <div class="divider"></div>
+            <p style="color: var(--color-text-muted); margin-bottom: 24px;">宇禾建材秉持專業與嚴謹的態度，為建築、土木工程提供最完整的材料解決方案。我們深知每一磚一瓦、每一寸填縫，都關乎建築的百年大計。</p>
+            <p style="color: var(--color-text-muted); margin-bottom: 40px;">我們不只是建材供應商，更是您工程上的專業技術顧問。為您的專案挑選最適合的防水、黏著、填縫配方。</p>
+            <a href="about.html" class="product-link">深入了解宇禾建材</a>
+          </div>
+          <div class="reveal delay-2" style="background-color: var(--color-bg-alt); padding: 60px; border: 1px solid var(--color-border); position: relative;">
+            <div style="position: absolute; top: 0; left: 0; width: 4px; height: 100%; background-color: var(--color-accent);"></div>
+            <h3 style="font-size: 24px; color: var(--color-primary); margin-bottom: 20px; font-weight: 600;" class="serif">精準．永續．品質</h3>
+            <ul style="list-style: none; display: flex; flex-direction: column; gap: 20px; color: var(--color-text-muted);">
+              <li>✓ 瑞士百年 SIKA 原廠授權總代理</li>
+              <li>✓ 低揮發 (VOC) 綠色環保建材推廣</li>
+              <li>✓ 專業工程技術與選材顧問服務</li>
+              <li>✓ 高規格倉儲管理確保材料鮮度</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Scrollable Content 2: Feature Products -->
+      <section class="section" style="background-color: var(--color-bg-alt);">
+        <div class="container">
+          <div style="text-align: center; margin-bottom: 80px;" class="reveal">
+            <span class="section-subtitle" style="display:inline-block; margin-bottom:12px;">Premium Materials</span>
+            <h2 class="section-title">精選工程材料</h2>
+            <div class="divider" style="margin: 0 auto;"></div>
+          </div>
+          <div class="grid-3">
+            <div class="product-card reveal delay-1">
+              <span class="product-category">Waterproofing</span>
+              <h3 class="product-title">防水工程黏著劑</h3>
+              <p>高效能防水系列，適用於各種嚴苛環境之防水工程需求，具備卓越耐久性。</p>
+              <a href="products.html" class="product-link">了解更多</a>
+            </div>
+            <div class="product-card reveal delay-2">
+              <span class="product-category">Tile Grouts</span>
+              <h3 class="product-title">磁磚填縫劑</h3>
+              <p>高硬度、防水防霉之專業填縫材料，確保磁磚工程之視覺精緻度與長效耐久性。</p>
+              <a href="products.html" class="product-link">了解更多</a>
+            </div>
+            <div class="product-card reveal delay-3">
+              <span class="product-category">Green Materials</span>
+              <h3 class="product-title">低揮發環保建材</h3>
+              <p>符合嚴格綠建材認證標準，友善施工人員健康及自然環境，永續建築首選。</p>
+              <a href="products.html" class="product-link">了解更多</a>
+            </div>
+          </div>
+          <div style="text-align: center; margin-top: 60px;" class="reveal delay-4">
+            <a href="products.html" class="btn btn-primary">檢視所有產品</a>
           </div>
         </div>
       </section>
@@ -65,6 +123,31 @@
         nav.classList.toggle('active');
       });
     }
+
+    // Scroll Animations
+    document.addEventListener("DOMContentLoaded", () => {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+          }
+        });
+      }, { threshold: 0.1 });
+
+      document.querySelectorAll('.reveal').forEach(el => {
+        observer.observe(el);
+      });
+      
+      // Trigger animations for elements already in viewport on load
+      setTimeout(() => {
+        document.querySelectorAll('.reveal').forEach(el => {
+          const rect = el.getBoundingClientRect();
+          if(rect.top < window.innerHeight) {
+            el.classList.add('active');
+          }
+        });
+      }, 100);
+    });
   </script>
 </body>
 </html>
