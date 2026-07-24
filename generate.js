@@ -137,15 +137,18 @@ const pages = {
     active: 'index',
     content: `
       <section class="hero">
-        <div class="container">
-          <div class="hero-content">
+        <div class="container grid-2" style="align-items: center; gap: 60px;">
+          <div class="hero-content" style="max-width: 100%;">
             <span class="hero-tag">SIKA 台灣總代理</span>
-            <h1 class="hero-title">您專業建築工程的<br>頂尖合作夥伴</h1>
-            <p class="hero-desc">在速成主義盛行的時代，我們以精準為犁，深耕每寸工地。<br>提供高品質、低揮發的綠建築建材，讓每一次選擇都成為時間帶不走的建築詩篇。</p>
+            <h1 class="hero-title" style="font-size: 48px;">您專業建築工程的<br>頂尖合作夥伴</h1>
+            <p class="hero-desc" style="font-size: 16px; margin-bottom: 40px;">在速成主義盛行的時代，我們以精準為犁，深耕每寸工地。<br>提供高品質、低揮發的綠建築建材，讓每一次選擇都成為時間帶不走的建築詩篇。</p>
             <div class="hero-actions">
               <a href="products.html" class="btn btn-primary">瀏覽產品目錄</a>
               <a href="contact.html" class="btn btn-outline">與我們聯繫</a>
             </div>
+          </div>
+          <div class="hero-image">
+            <img src="hero.png" alt="High-end modern architecture" style="width: 100%; height: auto; display: block; border: 1px solid var(--color-border); box-shadow: 0 20px 60px rgba(15,23,42,0.1);">
           </div>
         </div>
       </section>
