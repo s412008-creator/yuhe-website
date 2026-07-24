@@ -232,15 +232,15 @@ const pages = {
     title: '首頁',
     active: 'index',
     content: `
-      <section class="hero" style="display: flex; align-items: center; justify-content: center; min-height: 70vh; text-align: center;">
-        <div class="container">
-          <div class="hero-content" style="max-width: 800px; margin: 0 auto;">
-            <span class="hero-tag reveal">SIKA 台灣總代理</span>
-            <h1 class="hero-title reveal delay-1" style="font-size: 64px; font-weight: 700; line-height: 1.2; letter-spacing: 2px;">宇禾建材<br><span style="font-size: 36px; font-weight: 400; display: block; margin-top: 12px; letter-spacing: 0;">您專業建築工程的頂尖合作夥伴</span></h1>
-            <p class="hero-desc reveal delay-2" style="font-size: 16px; margin: 0 auto 40px auto; color: var(--color-text-muted);">在速成主義盛行的時代，我們以精準為犁，深耕每寸工地。<br>提供高品質、低揮發的綠建築建材，讓每一次選擇都成為時間帶不走的建築詩篇。</p>
-            <div class="hero-actions reveal delay-3" style="justify-content: center;">
-              <a href="products.html" class="btn btn-primary">瀏覽產品目錄</a>
-              <a href="contact.html" class="btn btn-outline">與我們聯繫</a>
+      <section class="hero" style="position: relative; display: flex; align-items: center; justify-content: center; min-height: 85vh; text-align: center; color: #FFF; background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url('showcase.jpg'); background-size: cover; background-position: center; background-attachment: fixed;">
+        <div class="container" style="position: relative; z-index: 2;">
+          <div class="hero-content" style="max-width: 900px; margin: 0 auto; padding: 40px;">
+            <span class="hero-tag reveal" style="color: #FFF; border-color: rgba(255,255,255,0.3); letter-spacing: 4px; background: rgba(0,0,0,0.2); backdrop-filter: blur(4px);">SIKA 台灣總代理</span>
+            <h1 class="hero-title reveal delay-1" style="font-size: 72px; font-weight: 700; line-height: 1.2; letter-spacing: 4px; text-shadow: 0 4px 20px rgba(0,0,0,0.3);">宇禾建材<br><span style="font-size: 32px; font-weight: 400; display: block; margin-top: 16px; letter-spacing: 2px; color: rgba(255,255,255,0.9);">您專業建築工程的頂尖合作夥伴</span></h1>
+            <p class="hero-desc reveal delay-2" style="font-size: 18px; line-height: 1.8; margin: 0 auto 40px auto; color: rgba(255,255,255,0.8); text-shadow: 0 2px 10px rgba(0,0,0,0.3);">在速成主義盛行的時代，我們以精準為犁，深耕每寸工地。<br>提供高品質、低揮發的綠建築建材，讓每一次選擇都成為時間帶不走的建築詩篇。</p>
+            <div class="hero-actions reveal delay-3" style="justify-content: center; gap: 24px;">
+              <a href="products.html" class="btn" style="background-color: var(--color-primary); color: #FFF; border: none; padding: 16px 40px; font-size: 16px; box-shadow: 0 8px 24px rgba(45, 90, 39, 0.4);">瀏覽產品目錄</a>
+              <a href="contact.html" class="btn" style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); color: #FFF; border: 1px solid rgba(255, 255, 255, 0.3); padding: 16px 40px; font-size: 16px;">與我們聯繫</a>
             </div>
           </div>
         </div>
