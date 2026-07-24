@@ -229,19 +229,16 @@ const pages = {
     title: '首頁',
     active: 'index',
     content: `
-      <section class="hero">
-        <div class="container grid-2" style="align-items: center; gap: 60px;">
-          <div class="hero-content" style="max-width: 100%;">
+      <section class="hero" style="display: flex; align-items: center; justify-content: center; min-height: 70vh; text-align: center;">
+        <div class="container">
+          <div class="hero-content" style="max-width: 800px; margin: 0 auto;">
             <span class="hero-tag reveal">SIKA 台灣總代理</span>
-            <h1 class="hero-title reveal delay-1" style="font-size: 48px;">您專業建築工程的<br>頂尖合作夥伴</h1>
-            <p class="hero-desc reveal delay-2" style="font-size: 16px; margin-bottom: 40px;">在速成主義盛行的時代，我們以精準為犁，深耕每寸工地。<br>提供高品質、低揮發的綠建築建材，讓每一次選擇都成為時間帶不走的建築詩篇。</p>
-            <div class="hero-actions reveal delay-3">
+            <h1 class="hero-title reveal delay-1" style="font-size: 52px; line-height: 1.3;">您專業建築工程的<br>頂尖合作夥伴</h1>
+            <p class="hero-desc reveal delay-2" style="font-size: 16px; margin: 0 auto 40px auto; color: var(--color-text-muted);">在速成主義盛行的時代，我們以精準為犁，深耕每寸工地。<br>提供高品質、低揮發的綠建築建材，讓每一次選擇都成為時間帶不走的建築詩篇。</p>
+            <div class="hero-actions reveal delay-3" style="justify-content: center;">
               <a href="products.html" class="btn btn-primary">瀏覽產品目錄</a>
               <a href="contact.html" class="btn btn-outline">與我們聯繫</a>
             </div>
-          </div>
-          <div class="hero-image reveal delay-4">
-            <img src="hero.png" alt="High-end modern architecture" style="width: 100%; height: auto; display: block; border: 1px solid var(--color-border); box-shadow: 0 20px 60px rgba(15,23,42,0.1);">
           </div>
         </div>
       </section>

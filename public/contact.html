@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>聯絡資訊 | 宇禾建材 YU HE BUILDING MATERIALS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Noto+Sans+TC:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-zh serif">宇禾建材</span>
+        <span class="brand-en">Yu He Building Materials</span>
+      </a>
+      <div class="hamburger" id="mobile-menu-btn">
+        <span></span><span></span><span></span>
+      </div>
+      <nav class="nav-links" id="nav-links">
+        <a href="about.html" class="">關於我們</a>
+        <a href="brand.html" class="">代理品牌</a>
+        <a href="products.html" class="">產品項目</a>
+        <a href="contact.html" class="active">聯絡資訊</a>
+      </nav>
+    </div>
+  </header>
+  <div class="page-content">
+    
+      <section class="section" style="padding-bottom: 60px;">
+        <div class="container">
+          <div style="text-align: center; margin-bottom: 80px;">
+            <span class="section-subtitle" style="display:inline-block; margin-bottom:12px;">Get in Touch</span>
+            <h2 class="section-title">聯絡我們</h2>
+            <div class="divider" style="margin: 0 auto;"></div>
+            <p style="margin-top:24px; color:var(--color-text-muted); font-size:15px; max-width:600px; margin-left:auto; margin-right:auto;">
+              歡迎您隨時與我們聯繫。無論是產品詢問、專案諮詢或技術支援，宇禾建材專業團隊都將為您提供最完善的服務。
+            </p>
+          </div>
+          <div class="grid-3" style="text-align: center; gap: 60px;">
+            <div>
+              <div style="font-size:32px; color:var(--color-accent); margin-bottom:16px;">✆</div>
+              <h3 style="font-size:14px; letter-spacing:2px; text-transform:uppercase; color:var(--color-primary); margin-bottom:12px;">Phone / Fax</h3>
+              <p style="color:var(--color-text-muted); font-size:15px; line-height:2;">
+                T: <a href="tel:036670386" style="color:inherit; font-weight:500;">03-6670386</a><br>
+                M: <a href="tel:0963380315" style="color:inherit; font-weight:500;">0963-380-315</a><br>
+                F: 03-6673910
+              </p>
+            </div>
+            <div>
+              <div style="font-size:32px; color:var(--color-accent); margin-bottom:16px;">✉</div>
+              <h3 style="font-size:14px; letter-spacing:2px; text-transform:uppercase; color:var(--color-primary); margin-bottom:12px;">Email</h3>
+              <p style="color:var(--color-text-muted); font-size:15px; line-height:2;">
+                <a href="mailto:line0963@gmail.com" style="color:inherit; font-weight:500;">line0963@gmail.com</a>
+              </p>
+            </div>
+            <div>
+              <div style="font-size:32px; color:var(--color-accent); margin-bottom:16px;">📍</div>
+              <h3 style="font-size:14px; letter-spacing:2px; text-transform:uppercase; color:var(--color-primary); margin-bottom:12px;">Address</h3>
+              <p style="color:var(--color-text-muted); font-size:15px; line-height:2;">
+                302 新竹縣竹北市<br>自強五路 253 號
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Full width map at the very bottom -->
+      <div style="width: 100%; height: 500px; line-height: 0;">
+        <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=302新竹縣竹北市自強五路253號&t=&z=15&ie=UTF8&iwloc=&output=embed" style="filter: grayscale(100%) contrast(1.2);"></iframe>
+      </div>
+    
+  </div>
+  <footer>
+    <div class="container footer-inner">
+      <div class="copyright">&copy; 2024 YU HE BUILDING MATERIALS CO., LTD. ALL RIGHTS RESERVED.</div>
+      <div class="footer-links">
+        <a href="index.html">OFFICIAL WEBSITE</a>
+        <a href="https://www.facebook.com/p/%E5%AE%87%E7%A6%BE%E5%BB%BA%E6%9D%90-61561918858893/" target="_blank">FACEBOOK</a>
+      </div>
+    </div>
+  </footer>
+  
+  <script>
+    // Mobile menu toggle
+    const btn = document.getElementById('mobile-menu-btn');
+    const nav = document.getElementById('nav-links');
+    if(btn && nav) {
+      btn.addEventListener('click', () => {
+        nav.classList.toggle('active');
+      });
+    }
+
+    // Scroll Animations
+    document.addEventListener("DOMContentLoaded", () => {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+          }
+        });
+      }, { threshold: 0.1 });
+
+      document.querySelectorAll('.reveal').forEach(el => {
+        observer.observe(el);
+      });
+      
+      // Trigger animations for elements already in viewport on load
+      setTimeout(() => {
+        document.querySelectorAll('.reveal').forEach(el => {
+          const rect = el.getBoundingClientRect();
+          if(rect.top < window.innerHeight) {
+            el.classList.add('active');
+          }
+        });
+      }, 100);
+    });
+  </script>
+</body>
+</html>
