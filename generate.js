@@ -44,13 +44,15 @@ header { position: fixed; top: 0; left: 0; right: 0; background-color: rgba(255,
 .nav-links a.active { color: var(--color-accent); }
 .nav-links a::after { content: ''; position: absolute; bottom: -4px; left: 0; right: 0; height: 1px; background-color: var(--color-accent); transform: scaleX(0); transform-origin: right; transition: transform 0.4s ease; }
 .nav-links a:hover::after, .nav-links a.active::after { transform: scaleX(1); transform-origin: left; }
+.hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 10px; z-index: 1001; }
+.hamburger span { width: 24px; height: 2px; background: var(--color-primary); transition: 0.3s; }
 .page-content { padding-top: 80px; min-height: calc(100vh - 150px); }
-.hero { padding-top: 100px; padding-bottom: 120px; background-color: var(--color-bg-alt); border-bottom: 1px solid var(--color-border); }
+.hero { padding-top: 100px; padding-bottom: 120px; background-color: var(--color-bg-alt); border-bottom: 1px solid var(--color-border); overflow: hidden; }
 .hero-content { max-width: 800px; }
 .hero-tag { display: inline-block; padding: 6px 16px; border: 1px solid var(--color-accent); color: var(--color-accent); font-size: 11px; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 40px; }
 .hero-title { font-size: 56px; line-height: 1.2; color: var(--color-primary); margin-bottom: 32px; letter-spacing: 2px; }
 .hero-desc { font-size: 18px; color: var(--color-text-muted); max-width: 600px; margin-bottom: 56px; font-weight: 300; }
-.btn { display: inline-flex; align-items: center; justify-content: center; padding: 18px 40px; font-size: 13px; letter-spacing: 2px; text-transform: uppercase; cursor: pointer; border: none; }
+.btn { display: inline-flex; align-items: center; justify-content: center; padding: 18px 40px; font-size: 13px; letter-spacing: 2px; text-transform: uppercase; cursor: pointer; border: none; text-align: center; }
 .btn-primary { background-color: var(--color-primary); color: #FFF; }
 .btn-primary:hover { background-color: var(--color-accent); }
 .btn-outline { background-color: transparent; color: var(--color-primary); border: 1px solid var(--color-primary); }
@@ -87,8 +89,52 @@ footer { padding: 60px 0; background-color: #000000; color: rgba(255,255,255,0.4
 .footer-inner { display: flex; justify-content: space-between; align-items: center; }
 .footer-links { display: flex; gap: 32px; }
 .footer-links a:hover { color: #FFF; }
-@media (max-width: 992px) { .grid-2 { grid-template-columns: 1fr; gap: 60px; } .grid-3 { grid-template-columns: 1fr 1fr; gap: 32px; } .contact-wrapper { padding: 40px; } .hero-title { font-size: 40px; } }
-@media (max-width: 768px) { .grid-3 { grid-template-columns: 1fr; } .nav-links { display: none; } .footer-inner { flex-direction: column; gap: 24px; text-align: center; } .hero-actions { flex-direction: column; } }
+
+/* RESPONSIVE DESIGN (RWD) */
+@media (max-width: 992px) {
+  :root { --spacing-section: 80px; }
+  .grid-2 { grid-template-columns: 1fr; gap: 60px; } 
+  .grid-3 { grid-template-columns: 1fr 1fr; gap: 32px; } 
+  .contact-wrapper { padding: 40px; } 
+  .hero-title { font-size: 40px !important; } 
+  .brand-content { padding-right: 0; }
+  .brand-image-placeholder { min-height: 350px; }
+}
+@media (max-width: 768px) {
+  :root { --spacing-section: 60px; }
+  .container { padding: 0 20px; }
+  .grid-3 { grid-template-columns: 1fr; } 
+  
+  /* Mobile Menu */
+  .hamburger { display: flex; }
+  .nav-links { 
+    display: flex; 
+    flex-direction: column; 
+    position: fixed; 
+    top: 80px; left: 0; right: 0; 
+    background-color: #FFF; 
+    border-bottom: 1px solid var(--color-border);
+    padding: 20px; gap: 24px; 
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    opacity: 0; visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+  }
+  .nav-links.active { opacity: 1; visibility: visible; transform: translateY(0); }
+  
+  /* Sections */
+  .hero { padding-top: 60px; padding-bottom: 60px; }
+  .hero-title { font-size: 32px !important; }
+  .hero-desc { font-size: 15px; margin-bottom: 40px; }
+  .hero-actions { flex-direction: column; gap: 16px; width: 100%; }
+  .btn { width: 100%; }
+  .section-title { font-size: 28px; }
+  .product-card { padding: 32px 24px; }
+  
+  .footer-inner { flex-direction: column; gap: 24px; text-align: center; } 
+  .footer-links { flex-wrap: wrap; justify-content: center; gap: 16px; }
+}
 `;
 
 const getLayout = (title, content, activePage) => `<!DOCTYPE html>
@@ -108,7 +154,10 @@ const getLayout = (title, content, activePage) => `<!DOCTYPE html>
         <span class="brand-zh serif">宇禾建材</span>
         <span class="brand-en">Yu He Building Materials</span>
       </a>
-      <nav class="nav-links">
+      <div class="hamburger" id="mobile-menu-btn">
+        <span></span><span></span><span></span>
+      </div>
+      <nav class="nav-links" id="nav-links">
         <a href="about.html" class="${activePage === 'about' ? 'active' : ''}">關於我們</a>
         <a href="brand.html" class="${activePage === 'brand' ? 'active' : ''}">代理品牌</a>
         <a href="products.html" class="${activePage === 'products' ? 'active' : ''}">產品項目</a>
@@ -128,6 +177,17 @@ const getLayout = (title, content, activePage) => `<!DOCTYPE html>
       </div>
     </div>
   </footer>
+  
+  <script>
+    // Mobile menu toggle
+    const btn = document.getElementById('mobile-menu-btn');
+    const nav = document.getElementById('nav-links');
+    if(btn && nav) {
+      btn.addEventListener('click', () => {
+        nav.classList.toggle('active');
+      });
+    }
+  </script>
 </body>
 </html>`;
 

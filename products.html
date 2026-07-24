@@ -15,7 +15,10 @@
         <span class="brand-zh serif">宇禾建材</span>
         <span class="brand-en">Yu He Building Materials</span>
       </a>
-      <nav class="nav-links">
+      <div class="hamburger" id="mobile-menu-btn">
+        <span></span><span></span><span></span>
+      </div>
+      <nav class="nav-links" id="nav-links">
         <a href="about.html" class="">關於我們</a>
         <a href="brand.html" class="">代理品牌</a>
         <a href="products.html" class="active">產品項目</a>
@@ -81,5 +84,16 @@
       </div>
     </div>
   </footer>
+  
+  <script>
+    // Mobile menu toggle
+    const btn = document.getElementById('mobile-menu-btn');
+    const nav = document.getElementById('nav-links');
+    if(btn && nav) {
+      btn.addEventListener('click', () => {
+        nav.classList.toggle('active');
+      });
+    }
+  </script>
 </body>
 </html>
