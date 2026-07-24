@@ -159,7 +159,7 @@ const getLayout = (title, content, activePage) => `<!DOCTYPE html>
   <header>
     <div class="container header-inner">
       <a href="index.html" class="brand" style="flex-direction: row; align-items: center; gap: 16px;">
-        <img src="logo.jpg" alt="宇禾建材 YH Logo" style="height: 56px; width: auto; mix-blend-mode: multiply;">
+        <img src="logo.jpg" alt="宇禾建材 YH Logo" style="height: 56px; width: auto;">
         <div style="display: flex; flex-direction: column;">
           <span class="brand-zh serif">宇禾建材</span>
           <span class="brand-en">Yuhe Building Materials Co., Ltd.</span>
@@ -299,7 +299,7 @@ const pages = {
           </div>
           <div class="grid-3">
             <div class="product-card reveal delay-1">
-              <div style="text-align: center;"><img src="https://static.wixstatic.com/media/13d483_7caf9b67ad4b4cb39ee834f6c1eaee6c~mv2.jpg" loading="lazy" style="width: 100%; height: 220px; object-fit: contain; margin-bottom: 24px;"></div>
+              <div style="text-align: center;"><img src="https://static.wixstatic.com/media/13d483_85a0bbcd800b42ae867a7d2fc0bfa25a~mv2.jpg" loading="lazy" style="width: 100%; height: 220px; object-fit: contain; margin-bottom: 24px;"></div>
               <span class="product-category">Mortar Additives</span>
               <h3 class="product-title" style="font-size: 16px; min-height: 50px;">Sika Latex®-700 Protect<br>增強型耐水黏著劑和砂漿添加劑</h3>
               <p>顯著改善砂漿工作性與物理強度，為各類土木與建築工程提升整體施工品質。</p>
@@ -398,34 +398,27 @@ const pages = {
           <div class="divider"></div>
           <div class="grid-3">
             <div class="product-card">
-              <div style="text-align: center;"><img src="https://static.wixstatic.com/media/13d483_7caf9b67ad4b4cb39ee834f6c1eaee6c~mv2.jpg" loading="lazy" style="width: 100%; height: 220px; object-fit: contain; margin-bottom: 24px;"></div>
+              <div style="text-align: center;"><img src="https://static.wixstatic.com/media/13d483_85a0bbcd800b42ae867a7d2fc0bfa25a~mv2.jpg" loading="lazy" style="width: 100%; height: 220px; object-fit: contain; margin-bottom: 24px;"></div>
               <span class="product-category">Additives</span>
               <h3 class="product-title" style="font-size: 16px;">Sika Latex®-700 Protect<br>增強型耐水黏著劑和砂漿添加劑</h3>
               <a href="contact.html" class="product-link">Request Details</a>
             </div>
             <div class="product-card">
-              <div style="text-align: center;"><img src="https://static.wixstatic.com/media/13d483_016dc30ef99b4069af03248c0a653347~mv2.jpg" loading="lazy" style="width: 100%; height: 220px; object-fit: contain; margin-bottom: 24px;"></div>
+              <div style="text-align: center;"><img src="https://static.wixstatic.com/media/13d483_f34d1cf9584a4eb18dc21833a1cb0de6~mv2.jpg" loading="lazy" style="width: 100%; height: 220px; object-fit: contain; margin-bottom: 24px;"></div>
               <span class="product-category">Grouts</span>
               <h3 class="product-title" style="font-size: 16px;">SikaCeram®-650Classic<br>抗菌防霉水泥填縫劑</h3>
               <a href="contact.html" class="product-link">Request Details</a>
             </div>
             <div class="product-card">
-              <div style="text-align: center;"><img src="https://static.wixstatic.com/media/13d483_85a0bbcd800b42ae867a7d2fc0bfa25a~mv2.jpg" loading="lazy" style="width: 100%; height: 220px; object-fit: contain; margin-bottom: 24px;"></div>
-              <div style="text-align: center;"><img src="https://static.wixstatic.com/media/13d483_54cf1e6c34ba44dc9c349e0423d26b68~mv2.jpg" loading="lazy" style="width: 100%; height: 220px; object-fit: contain; margin-bottom: 24px;"></div>
+              <div style="text-align: center;"><img src="https://static.wixstatic.com/media/13d483_031e0939d7034f33a6ebe5fdeafb313c~mv2.jpg" loading="lazy" style="width: 100%; height: 220px; object-fit: contain; margin-bottom: 24px;"></div>
               <span class="product-category">Waterproofing</span>
               <h3 class="product-title" style="font-size: 16px;">SikaTop®-109 Elasto<br>抗裂型水泥系聚合物改質防水塗層</h3>
               <a href="contact.html" class="product-link">Request Details</a>
             </div>
             <div class="product-card">
-              <div style="text-align: center;"><img src="https://static.wixstatic.com/media/13d483_f34d1cf9584a4eb18dc21833a1cb0de6~mv2.jpg" loading="lazy" style="width: 100%; height: 220px; object-fit: contain; margin-bottom: 24px;"></div>
+              <div style="text-align: center;"><img src="https://static.wixstatic.com/media/13d483_1a71f1010655484590153108fef97984~mv2.jpg" loading="lazy" style="width: 100%; height: 220px; object-fit: contain; margin-bottom: 24px;"></div>
               <span class="product-category">Primer</span>
               <h3 class="product-title" style="font-size: 16px;">SikaTop®-50<br>多孔系水性底漆</h3>
-              <a href="contact.html" class="product-link">Request Details</a>
-            </div>
-            <div class="product-card">
-              <div style="text-align: center;"><img src="https://static.wixstatic.com/media/13d483_54cf1e6c34ba44dc9c349e0423d26b68~mv2.jpg" loading="lazy" style="width: 100%; height: 220px; object-fit: contain; margin-bottom: 24px;"></div>
-              <span class="product-category">Primer</span>
-              <h3 class="product-title" style="font-size: 16px;">SikaTop®-10<br>水泥基材專用水性底漆</h3>
               <a href="contact.html" class="product-link">Request Details</a>
             </div>
             <div class="product-card">
@@ -438,6 +431,12 @@ const pages = {
               <div style="text-align: center;"><img src="https://static.wixstatic.com/media/13d483_9706aa16a95a44fb89778eb01a4d1f8e~mv2.jpg" loading="lazy" style="width: 100%; height: 220px; object-fit: contain; margin-bottom: 24px;"></div>
               <span class="product-category">Adhesives</span>
               <h3 class="product-title" style="font-size: 16px;">SikaCeram®-252 StarFlex<br>西班牙進口高變型曲折彈性黏著劑</h3>
+              <a href="contact.html" class="product-link">Request Details</a>
+            </div>
+            <div class="product-card">
+              <div style="text-align: center;"><img src="https://static.wixstatic.com/media/13d483_3aa30d8d13ee4c2cbbeb57e5746cb14c~mv2.jpg" loading="lazy" style="width: 100%; height: 220px; object-fit: contain; margin-bottom: 24px;"></div>
+              <span class="product-category">Adhesives</span>
+              <h3 class="product-title" style="font-size: 16px;">SikaCeram®-188 MY<br>馬來西亞進口高性能磁磚黏著劑</h3>
               <a href="contact.html" class="product-link">Request Details</a>
             </div>
             <div class="product-card">
