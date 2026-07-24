@@ -158,9 +158,12 @@ const getLayout = (title, content, activePage) => `<!DOCTYPE html>
 <body>
   <header>
     <div class="container header-inner">
-      <a href="index.html" class="brand">
-        <span class="brand-zh serif">宇禾建材</span>
-        <span class="brand-en">Yu He Building Materials</span>
+      <a href="index.html" class="brand" style="flex-direction: row; align-items: center; gap: 16px;">
+        <img src="logo.jpg" alt="宇禾建材 YH Logo" style="height: 56px; width: auto; mix-blend-mode: multiply;">
+        <div style="display: flex; flex-direction: column;">
+          <span class="brand-zh serif">宇禾建材</span>
+          <span class="brand-en">Yuhe Building Materials Co., Ltd.</span>
+        </div>
       </a>
       <div class="hamburger" id="mobile-menu-btn">
         <span></span><span></span><span></span>
@@ -277,21 +280,21 @@ const pages = {
           </div>
           <div class="grid-3">
             <div class="product-card reveal delay-1">
-              <span class="product-category">Waterproofing</span>
-              <h3 class="product-title">防水工程黏著劑</h3>
-              <p>高效能防水系列，適用於各種嚴苛環境之防水工程需求，具備卓越耐久性。</p>
+              <span class="product-category">Mortar Additives</span>
+              <h3 class="product-title" style="font-size: 16px; min-height: 50px;">Sika Latex®-700 Protect<br>增強型耐水黏著劑和砂漿添加劑</h3>
+              <p>顯著改善砂漿工作性與物理強度，為各類土木與建築工程提升整體施工品質。</p>
               <a href="products.html" class="product-link">了解更多</a>
             </div>
             <div class="product-card reveal delay-2">
-              <span class="product-category">Tile Grouts</span>
-              <h3 class="product-title">磁磚填縫劑</h3>
-              <p>高硬度、防水防霉之專業填縫材料，確保磁磚工程之視覺精緻度與長效耐久性。</p>
+              <span class="product-category">Tile Adhesives</span>
+              <h3 class="product-title" style="font-size: 16px; min-height: 50px;">SikaCeram®-252 StarFlex<br>西班牙進口高變型曲折彈性黏著劑</h3>
+              <p>高強黏著力之磁磚專用接著劑，確保長期穩固不脫落。</p>
               <a href="products.html" class="product-link">了解更多</a>
             </div>
             <div class="product-card reveal delay-3">
-              <span class="product-category">Green Materials</span>
-              <h3 class="product-title">低揮發環保建材</h3>
-              <p>符合嚴格綠建材認證標準，友善施工人員健康及自然環境，永續建築首選。</p>
+              <span class="product-category">Sealants</span>
+              <h3 class="product-title" style="font-size: 16px; min-height: 50px;">Sikaflex®-11 FC+<br>單組分聚氨酯彈性密封膠</h3>
+              <p>極低 VOC 揮發量，多功能黏著與密封，友善施工環境。</p>
               <a href="products.html" class="product-link">了解更多</a>
             </div>
           </div>
@@ -373,39 +376,48 @@ const pages = {
           <div class="divider"></div>
           <div class="grid-3">
             <div class="product-card">
+              <span class="product-category">Additives</span>
+              <h3 class="product-title" style="font-size: 16px;">Sika Latex®-700 Protect<br>增強型耐水黏著劑和砂漿添加劑</h3>
+              <a href="contact.html" class="product-link">Request Details</a>
+            </div>
+            <div class="product-card">
+              <span class="product-category">Grouts</span>
+              <h3 class="product-title" style="font-size: 16px;">SikaCeram®-650Classic<br>抗菌防霉水泥填縫劑</h3>
+              <a href="contact.html" class="product-link">Request Details</a>
+            </div>
+            <div class="product-card">
               <span class="product-category">Waterproofing</span>
-              <h3 class="product-title">防水工程黏著劑</h3>
-              <p>高效能防水系列，適用於屋頂、浴室、地下室等各種嚴苛環境之防水工程需求，具備卓越耐久性與耐候性。</p>
+              <h3 class="product-title" style="font-size: 16px;">SikaTop®-109 Elasto<br>抗裂型水泥系聚合物改質防水塗層</h3>
               <a href="contact.html" class="product-link">Request Details</a>
             </div>
             <div class="product-card">
-              <span class="product-category">Mortar Additives</span>
-              <h3 class="product-title">砂漿添加劑</h3>
-              <p>顯著改善砂漿工作性與物理強度，增加結構黏著力與柔韌度，為各類土木與建築工程提升整體施工品質。</p>
+              <span class="product-category">Primer</span>
+              <h3 class="product-title" style="font-size: 16px;">SikaTop®-50<br>多孔系水性底漆</h3>
               <a href="contact.html" class="product-link">Request Details</a>
             </div>
             <div class="product-card">
-              <span class="product-category">Tile Grouts</span>
-              <h3 class="product-title">磁磚填縫劑</h3>
-              <p>高硬度、防水防霉之專業填縫材料，提供多樣化色彩選擇，確保磁磚工程之視覺精緻度與長效耐久性。</p>
+              <span class="product-category">Primer</span>
+              <h3 class="product-title" style="font-size: 16px;">SikaTop®-10<br>水泥基材專用水性底漆</h3>
               <a href="contact.html" class="product-link">Request Details</a>
             </div>
             <div class="product-card">
               <span class="product-category">Adhesives</span>
-              <h3 class="product-title">磁磚黏著劑</h3>
-              <p>高強黏著力之磁磚專用接著劑，適用於高低落差環境、牆面及地面鋪設，確保長期穩固不脫落。</p>
+              <h3 class="product-title" style="font-size: 16px;">SikaCeram®-260 StarFlex<br>西班牙進口高曲折彈性黏著劑</h3>
               <a href="contact.html" class="product-link">Request Details</a>
             </div>
             <div class="product-card">
-              <span class="product-category">Structural</span>
-              <h3 class="product-title">結構補強材料</h3>
-              <p>專業混凝土修補與結構補強產品，有效提升建築體耐久性，抵抗外在環境侵蝕與風化作用。</p>
+              <span class="product-category">Adhesives</span>
+              <h3 class="product-title" style="font-size: 16px;">SikaCeram®-252 StarFlex<br>西班牙進口高變型曲折彈性黏著劑</h3>
               <a href="contact.html" class="product-link">Request Details</a>
             </div>
             <div class="product-card">
-              <span class="product-category">Green Materials</span>
-              <h3 class="product-title">低揮發環保建材</h3>
-              <p>符合嚴格綠建材認證標準，極低 VOC 揮發量，友善施工人員健康及自然環境，為現代永續建築首選。</p>
+              <span class="product-category">Adhesives</span>
+              <h3 class="product-title" style="font-size: 16px;">SikaCeram®-288 MY<br>馬來西亞進口高性能磁磚黏著劑</h3>
+              <a href="contact.html" class="product-link">Request Details</a>
+            </div>
+            <div class="product-card">
+              <span class="product-category">Sealants</span>
+              <h3 class="product-title" style="font-size: 16px;">Sikaflex®-11 FC+<br>單組分聚氨酯彈性密封膠與多功能黏著劑</h3>
               <a href="contact.html" class="product-link">Request Details</a>
             </div>
           </div>

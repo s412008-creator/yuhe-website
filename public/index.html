@@ -11,9 +11,12 @@
 <body>
   <header>
     <div class="container header-inner">
-      <a href="index.html" class="brand">
-        <span class="brand-zh serif">宇禾建材</span>
-        <span class="brand-en">Yu He Building Materials</span>
+      <a href="index.html" class="brand" style="flex-direction: row; align-items: center; gap: 16px;">
+        <img src="logo.jpg" alt="宇禾建材 YH Logo" style="height: 56px; width: auto; mix-blend-mode: multiply;">
+        <div style="display: flex; flex-direction: column;">
+          <span class="brand-zh serif">宇禾建材</span>
+          <span class="brand-en">Yuhe Building Materials Co., Ltd.</span>
+        </div>
       </a>
       <div class="hamburger" id="mobile-menu-btn">
         <span></span><span></span><span></span>
@@ -28,19 +31,16 @@
   </header>
   <div class="page-content">
     
-      <section class="hero">
-        <div class="container grid-2" style="align-items: center; gap: 60px;">
-          <div class="hero-content" style="max-width: 100%;">
+      <section class="hero" style="display: flex; align-items: center; justify-content: center; min-height: 70vh; text-align: center;">
+        <div class="container">
+          <div class="hero-content" style="max-width: 800px; margin: 0 auto;">
             <span class="hero-tag reveal">SIKA 台灣總代理</span>
-            <h1 class="hero-title reveal delay-1" style="font-size: 48px;">您專業建築工程的<br>頂尖合作夥伴</h1>
-            <p class="hero-desc reveal delay-2" style="font-size: 16px; margin-bottom: 40px;">在速成主義盛行的時代，我們以精準為犁，深耕每寸工地。<br>提供高品質、低揮發的綠建築建材，讓每一次選擇都成為時間帶不走的建築詩篇。</p>
-            <div class="hero-actions reveal delay-3">
+            <h1 class="hero-title reveal delay-1" style="font-size: 52px; line-height: 1.3;">您專業建築工程的<br>頂尖合作夥伴</h1>
+            <p class="hero-desc reveal delay-2" style="font-size: 16px; margin: 0 auto 40px auto; color: var(--color-text-muted);">在速成主義盛行的時代，我們以精準為犁，深耕每寸工地。<br>提供高品質、低揮發的綠建築建材，讓每一次選擇都成為時間帶不走的建築詩篇。</p>
+            <div class="hero-actions reveal delay-3" style="justify-content: center;">
               <a href="products.html" class="btn btn-primary">瀏覽產品目錄</a>
               <a href="contact.html" class="btn btn-outline">與我們聯繫</a>
             </div>
-          </div>
-          <div class="hero-image reveal delay-4">
-            <img src="hero.png" alt="High-end modern architecture" style="width: 100%; height: auto; display: block; border: 1px solid var(--color-border); box-shadow: 0 20px 60px rgba(15,23,42,0.1);">
           </div>
         </div>
       </section>
@@ -79,21 +79,21 @@
           </div>
           <div class="grid-3">
             <div class="product-card reveal delay-1">
-              <span class="product-category">Waterproofing</span>
-              <h3 class="product-title">防水工程黏著劑</h3>
-              <p>高效能防水系列，適用於各種嚴苛環境之防水工程需求，具備卓越耐久性。</p>
+              <span class="product-category">Mortar Additives</span>
+              <h3 class="product-title" style="font-size: 16px; min-height: 50px;">Sika Latex®-700 Protect<br>增強型耐水黏著劑和砂漿添加劑</h3>
+              <p>顯著改善砂漿工作性與物理強度，為各類土木與建築工程提升整體施工品質。</p>
               <a href="products.html" class="product-link">了解更多</a>
             </div>
             <div class="product-card reveal delay-2">
-              <span class="product-category">Tile Grouts</span>
-              <h3 class="product-title">磁磚填縫劑</h3>
-              <p>高硬度、防水防霉之專業填縫材料，確保磁磚工程之視覺精緻度與長效耐久性。</p>
+              <span class="product-category">Tile Adhesives</span>
+              <h3 class="product-title" style="font-size: 16px; min-height: 50px;">SikaCeram®-252 StarFlex<br>西班牙進口高變型曲折彈性黏著劑</h3>
+              <p>高強黏著力之磁磚專用接著劑，確保長期穩固不脫落。</p>
               <a href="products.html" class="product-link">了解更多</a>
             </div>
             <div class="product-card reveal delay-3">
-              <span class="product-category">Green Materials</span>
-              <h3 class="product-title">低揮發環保建材</h3>
-              <p>符合嚴格綠建材認證標準，友善施工人員健康及自然環境，永續建築首選。</p>
+              <span class="product-category">Sealants</span>
+              <h3 class="product-title" style="font-size: 16px; min-height: 50px;">Sikaflex®-11 FC+<br>單組分聚氨酯彈性密封膠</h3>
+              <p>極低 VOC 揮發量，多功能黏著與密封，友善施工環境。</p>
               <a href="products.html" class="product-link">了解更多</a>
             </div>
           </div>
