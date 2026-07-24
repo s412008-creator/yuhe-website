@@ -88,12 +88,12 @@ footer { padding: 60px 0; background-color: #000000; color: rgba(255,255,255,0.4
 .footer-links a:hover { color: #FFF; }
 
 /* ANIMATIONS */
-.reveal { opacity: 0; transform: translateY(40px); transition: all 1s cubic-bezier(0.2, 0.8, 0.2, 1); }
+.reveal { opacity: 0; transform: translateY(20px); transition: all 0.4s ease-out; }
 .reveal.active { opacity: 1; transform: translateY(0); }
-.delay-1 { transition-delay: 0.2s; }
-.delay-2 { transition-delay: 0.4s; }
-.delay-3 { transition-delay: 0.6s; }
-.delay-4 { transition-delay: 0.8s; }
+.delay-1 { transition-delay: 0.05s; }
+.delay-2 { transition-delay: 0.1s; }
+.delay-3 { transition-delay: 0.15s; }
+.delay-4 { transition-delay: 0.2s; }
 
 /* RESPONSIVE DESIGN (RWD) */
 @media (max-width: 992px) {
