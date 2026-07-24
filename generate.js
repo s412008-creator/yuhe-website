@@ -236,7 +236,7 @@ const pages = {
         <div class="container">
           <div class="hero-content" style="max-width: 800px; margin: 0 auto;">
             <span class="hero-tag reveal">SIKA 台灣總代理</span>
-            <h1 class="hero-title reveal delay-1" style="font-size: 52px; line-height: 1.3;">您專業建築工程的<br>頂尖合作夥伴</h1>
+            <h1 class="hero-title reveal delay-1" style="font-size: 64px; font-weight: 700; line-height: 1.2; letter-spacing: 2px;">宇禾建材<br><span style="font-size: 36px; font-weight: 400; display: block; margin-top: 12px; letter-spacing: 0;">您專業建築工程的頂尖合作夥伴</span></h1>
             <p class="hero-desc reveal delay-2" style="font-size: 16px; margin: 0 auto 40px auto; color: var(--color-text-muted);">在速成主義盛行的時代，我們以精準為犁，深耕每寸工地。<br>提供高品質、低揮發的綠建築建材，讓每一次選擇都成為時間帶不走的建築詩篇。</p>
             <div class="hero-actions reveal delay-3" style="justify-content: center;">
               <a href="products.html" class="btn btn-primary">瀏覽產品目錄</a>
